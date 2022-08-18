@@ -19,6 +19,7 @@ It will also test your project to see if you handle all possible errors
 
 # Tester
 ![](Tester.gif)
+
 The file is named : `test`
   1. Run it with `./test`
   2. admire the result
@@ -29,6 +30,7 @@ For exemple when you return nothing instead of Error (with a newline)
 
 # Checker:
 ![](Checker.gif)
+
 If the executable isn't present, `make`
 
 Run the checker like this: `../push_swap $ARG | ./checker $ARG`
