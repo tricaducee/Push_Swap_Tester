@@ -18,6 +18,7 @@ It will also test your project to see if you handle all possible errors
   4. Launch [the tester](https://github.com/Miniflint/Push_Swap_Tester/README.md#Tester) or [the checker](https://github.com/Miniflint/Push_Swap_Tester/README.md#Checker)
 
 # Tester
+![](Tester.gif)
 The file is named : `test`
   1. Run it with `./test`
   2. admire the result
@@ -27,6 +28,7 @@ Some of the result may go through even if it's not `[ok]`
 For exemple when you return nothing instead of Error (with a newline)
 
 # Checker:
+![](Checker.gif)
 If the executable isn't present, `make`
 
 Run the checker like this: `../push_swap $ARG | ./checker $ARG`
