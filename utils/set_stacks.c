@@ -6,7 +6,7 @@
 /*   By: hrolle <hrolle@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/07/07 21:44:40 by hrolle            #+#    #+#             */
-/*   Updated: 2022/08/11 07:38:54 by hrolle           ###   ########.fr       */
+/*   Updated: 2022/10/16 19:44:46 by hrolle           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,9 +14,6 @@
 
 void	set_stacks(t_stack *a, t_stack *b, unsigned int size)
 {
-	unsigned int	i;
-
-	i = 0;
 	a->real_size = size;
 	a->current_size = size;
 	a->unsorted_size = size;

@@ -6,7 +6,7 @@
 #    By: hrolle <hrolle@student.42.fr>              +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2022/07/07 19:48:42 by hrolle            #+#    #+#              #
-#    Updated: 2022/08/10 11:36:47 by hrolle           ###   ########.fr        #
+#    Updated: 2022/10/16 19:45:17 by hrolle           ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -69,4 +69,10 @@ fclean : clean
 
 re : fclean all
 
-.PHONY: all re bonus clean fclean
+build:
+	docker build -t arch .
+	docker run -ti arch
+prune:
+	docker system prune -a --volumes
+
+.PHONY: all re bonus clean fclean build prune
