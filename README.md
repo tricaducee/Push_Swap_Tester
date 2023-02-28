@@ -6,7 +6,7 @@ With this tester, you get 2 executables.
 The tester will `make` the project for you and automatically test it
 
 It will display:
-  1. Your average
+  1. Your average and your low scores
   2. Notes
   3. `ok` and `ko`
 
