@@ -16,7 +16,7 @@
 # define YES_NO	1
 # define TOP	50
 # include "get_next_line.h"
-# include "../printfd/HEADER/ft_printfd.h"
+# include "ft_printfd.h"
 
 typedef struct S_stack
 {

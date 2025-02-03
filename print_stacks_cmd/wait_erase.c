@@ -10,7 +10,7 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "../HEADER/checker.h"
+#include "checker.h"
 
 void	wait_erase(unsigned int lines, unsigned int time)
 {

@@ -10,7 +10,7 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "../HEADER/checker.h"
+#include "checker.h"
 
 void	prog_bar(int prog)
 {

@@ -35,7 +35,7 @@ NAME = checker
 
 CC = gcc
 
-CFLAGS = -Wall -Werror -Wextra
+CFLAGS = -Wall -Werror -Wextra -I./printfd/HEADER -I./HEADER -g
 
 ifeq ($(DEBUG), debug)
 	CFLAGS += -fsanitize=address -g3
@@ -44,12 +44,12 @@ endif
 $(NAME) : $(OBJ)
 	@make -C printfd
 	$(ECHO) "$(YELLOW)Compilation de checker...$(RESETTXT)"
-	@$(CC) $(CFLAGS) -o $@ printfd/libftprintfd.a $^
+	@$(CC) $(CFLAGS) $(OBJ) ./printfd/libftprintfd.a -o $(NAME)
 	$(ECHO) "$(GREEN)$(BOLD)Compilation Terminée !!!$(RESETTXT)"
 
 %.o : %.c
 	$(PRINT) "$(YELLOW)Generation des objets...$(RESETTXT)\r"
-	@$(CC) $(CFLAGS) -o $@ -c $<
+	@$(CC) $(CFLAGS)  -o $@ -c $<
 
 bonus : $(NAME)
 

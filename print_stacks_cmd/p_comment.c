@@ -10,7 +10,7 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "../HEADER/checker.h"
+#include "checker.h"
 
 void	p_comment(t_stack *a, t_stack *b, t_option *arg, char *str)
 {

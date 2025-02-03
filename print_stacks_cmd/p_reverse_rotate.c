@@ -10,7 +10,7 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "../HEADER/checker.h"
+#include "checker.h"
 
 int	p_rra(t_stack *a, t_stack *b, t_option *arg)
 {

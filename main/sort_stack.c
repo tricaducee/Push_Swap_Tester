@@ -10,7 +10,7 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "../HEADER/checker.h"
+#include "checker.h"
 
 void	sort_stack(t_stack *a, t_stack *b, t_option *arg)
 {

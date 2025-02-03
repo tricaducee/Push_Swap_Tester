@@ -10,7 +10,7 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "../HEADER/checker.h"
+#include "checker.h"
 
 unsigned int	what_is_the_len(int ac, char **av, t_option *arg)
 {
