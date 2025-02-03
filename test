@@ -103,8 +103,9 @@ average()
 
 compareResult()
 {
-	STR=`$NAME $* 2>&1`
-	if [[ $STR == $RET_VAL ]]
+	VALS="$*"
+	STR=`${NAME} ${VALS} 2>&1`
+	if [ "${STR}" = "${RET_VAL}" ]
 	then
 		echo "${BOLD}${GREEN}[OK]${RST}"
 	else
@@ -116,8 +117,9 @@ compareResult()
 
 compareResultNothing()
 {
-	STR=`$NAME $* 2>&1`
-	if [[ $STR == $RET_VAL ]]
+	VALS="$*"
+	STR=`${NAME} ${VALS} 2>&1`
+	if [ "${STR}" = "${RET_VAL}" ]
 	then
 		echo "${BOLD}${GREEN}[OK]${RST}"
 	else
@@ -595,7 +597,7 @@ echo "${ITAL}${PURPLE}Pour 5         ${RST}:${BLUE} ${BIGEST_C}${RST}\n"
 echo "${ITAL}${PURPLE}Pour 100       ${RST}:${BLUE} ${BIGEST_D}${RST}\n"
 echo "${ITAL}${PURPLE}Pour 500       ${RST}:${BLUE} ${BIGEST_E}${RST}\n"
 
-echo "$TXT\nTes point (moyenne) :$RST\n"
+echo "$TXT\nTes points (moyenne) :$RST\n"
 
 if [ $AVERAGE_A -le 2 ]
 then
@@ -656,7 +658,7 @@ else
 	echo "${ITAL}${PURPLE}Pour 500       ${RST}:${RED} 0${RST}\n"
 fi
 
-echo "$TXT\nTes point (moins bon scores) :$RST\n"
+echo "$TXT\nTes points (moins bon scores) :$RST\n"
 
 if [ $BIGEST_A -le 2 ]
 then
